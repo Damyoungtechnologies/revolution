@@ -1,0 +1,132 @@
+/* AI Solution Section */
+.ai-solution {
+    align-items: center;
+    padding: 2rem 0;
+    background-color: #e9f0fc;
+}
+.ai-solution .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.ai-solution .content {
+    flex: 1;
+    padding: 1rem;
+}
+  
+.ai-solution h2 {
+    color: #0047ab;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+  
+.ai-solution ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+}
+  
+.ai-solution .ai-image {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+  
+.ai-solution .ai-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+/* This is the animation effect for the get stared button */
+.ai-solution .btn {
+    background-color: #5c86bf;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+  
+.ai-solution .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, #011632, #1e90ff, #011632);
+    background-size: 300% 300%;
+    z-index: 1;
+    border-radius: 5px;
+    animation: gradient-shift 3s infinite linear;
+}
+  
+.ai-solution .btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #5c86bf;
+    z-index: 2;
+    border-radius: 5px;
+    opacity: 0.6;
+}
+  
+
+.ai-solution .btn span {
+    position: relative;
+    z-index: 3; /* Ensure text is above all pseudo-elements */
+    font-weight: bold;
+    color: white;
+}
+.ai-solution .btn:hover {
+    transform: scale(1.1);
+}
+  
+  /* Keyframes for the gradient animation */
+  @keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  
+  
+/* Responsive Design */
+@media (max-width: 768px) {
+.ai-solution .container{
+    flex-direction: column;
+    /* text-align: center; */
+}
+  
+.ai-solution .ai-image img {
+    width: 90%;
+}
+  
+.nav a {
+    display: block;
+    margin: 0.5rem 0;
+}
+}
+  
+@media (max-width: 480px) {
+.ai-solution h2 {
+    font-size: 1.5rem;
+}
+  
+.ai-solution .btn {
+    padding: 0.5rem 1rem;
+}
+}
+  

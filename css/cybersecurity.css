@@ -1,0 +1,53 @@
+.cyber {
+    background-image:  url(../images/cybersecurity_background.png) !important; 
+}
+.about-section1 {
+    /* background-color:rgb(185, 209, 223) ; */
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+.about-section1 img{
+    width: 80%;
+    border-radius: 10px;
+}
+.about-section1 .hacker{
+    flex: 1;
+}
+.about-section1 .about-section{
+    flex: 1;
+}
+.about-section1 h2{
+    color: rgb(0,71,171);
+}
+.about-section1 p{
+    text-align: justify;
+}
+.cyber .hero-content{
+    background: rgba(98, 168, 170, 0.142);
+    padding: 2rem;
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+}
+/* This is the responsiveness section  */
+@media only screen and (max-width: 1024px){
+    .about-section1 h2{
+        font-size: 3rem;
+    }
+}
+@media only screen and (max-width: 820px){
+    .about-section1 h2{
+        font-size: 2.2rem;
+    }
+}
+@media only screen and (max-width: 500px){
+    .about-section1 {
+       flex-direction: column;
+    }
+    .about-section1 img{
+        width: 100%;
+    }
+
+}
